@@ -1,12 +1,17 @@
 def game_hash
   hash = {
-    :home => 
-      {:team_name => [], 
+    :home => {
+      :team_name => "string", 
       :colors => [], 
       :players => []}, 
-    :away => {}
+    :away => {
+      :team_name => "string",
+      :colors
+      :players
+    }
+  
+    
   }
-  hash 
 end 
 
 def num_points_scored
