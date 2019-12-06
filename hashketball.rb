@@ -23,10 +23,10 @@ def game_hash
         return hash 
 end 
 
-def num_points_scored
+def num_points_scored(player_name)
   game_hash.collect do |location, team_data|
-    if team_data[:players].include?(:player_name)
-     return team_data[:players][:player_name][:points]
+    if team_data[:players].include?(player_name)
+     return team_data[:players][player_name][:points]
     end
   end
 
