@@ -39,13 +39,11 @@ def shoe_size(player_name)
   end
 end 
 
-def team_colors(team)
-  game_hash.values.each do |team|
-    if team.has_value?(team)
-      return team[:colors].map
-    end
-  end 
-end 
+def team_colors(team_name)
+  if team_name == "Brooklyn Nets"
+    game_hash[:home][:colors]
+  end
+end
 
 def team_names
   
