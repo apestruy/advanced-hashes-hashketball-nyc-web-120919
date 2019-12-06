@@ -129,10 +129,6 @@ hash = {}
       hash[player[:player_name]] = player[:steals]
     end
   end
-
 max_steals = hash.values.max
 hash[hash.key(max_steals)] == max_steals
-
 end
-
-
