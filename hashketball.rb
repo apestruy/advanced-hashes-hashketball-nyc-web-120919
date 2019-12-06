@@ -60,7 +60,7 @@ def player_numbers(team)
 end
 
 def player_stats(player_name)
-  game_hash.values.each do |location, team_data|
+  game_hash.collect do |location, team_data|
     if team_data[:players].include?(player_name)
      return team_data[:players][player_name]
     end
