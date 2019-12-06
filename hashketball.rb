@@ -7,13 +7,10 @@ def game_hash
     :away => {
       :team_name => "Charlotte Hornets",
       :colors => ["Turquoise", "Purple"],
-      :players => [{
-        
-        
-        
-      }]}
-  
-    
+      :players => [
+        {:player_name => "", :number => 5, :shoe => 5, :points => 5, :rebounds => 5, :assists => 5, :steals => 5, :blocks => 5, :slam_dunks => 5}]
+      
+    }
   }
 end 
 
