@@ -87,7 +87,17 @@ def big_shoe_rebounds
 end
 
 def most_points_scored
-  
+  most_points = 0
+  points_owner = ""
+  game_hash.values.each do |team_info|
+    team_info[:players].each do |player|
+      if player[:points] > most_points
+        most_points = player[:points] 
+        points_owner = player[:player_name] 
+      end
+    end
+  end
+  return points_owner
 end 
 
 def winning_team
