@@ -42,7 +42,7 @@ end
 def team_colors(team)
   game_hash.values.each do |team|
     if team.has_value?(team)
-      return team[:colors]
+      return team[:colors].map
     end
   end 
 end 
